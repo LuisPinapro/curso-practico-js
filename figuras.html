@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="./figuras.js"></script>
+    <script src="./descuentos.js"></script>
+    <title>Matematicas aplicadas || Curso Practico JS</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            Curso Practico JS
+        </h1>
+        <p class="subtitle">Este es el primer taller del curso practico de JS</p>
+    </header>
+    <h1 class="title"> Figuras Geometricas</h1>
+    <div class="container">
+        <section class="item">
+            <h2 class="info">Calcula el area y perimetro de un cuadrado</h2>
+            <form action="">
+                <label class="info" for="InputCuadrado">Escribe cuanto mide los lado de tu cuadrado: </label>
+                <input type="number" name="lados" id="InputCuadrado" >
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+
+            </form>
+        </section>
+        <section class="item">
+            <h2 class="info">Calcula el area y perimetro de un triangulo</h2>
+            <form action="" >
+                <label class="info" for="InputTriangulo1">Escribe el primer lado del triangulo </label>
+                <input type="number" name="lados" id="InputTriangulo1">
+                <label class="info" for="InputTriangulo2">Escribe el segundo lado del triangulo </label>
+                <input type="number" name="lados" id="InputTriangulo2">
+                <label class="info" for="InputTriangulo3">Escribe la base del triangulo </label>
+                <input type="number" name="lados" id="InputTriangulo3">
+                <label class="info" for="InputAltura">Escribe la altura del triangulo </label>
+                <input type="number" name="lados" id="InputAltura">
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+            </form>
+        </section>
+        <section class="item">
+            <h2 class="info">Calcula el area y perimetro / circunferecia de un circulo</h2>
+            <form action="">
+                <label class="info" for="InputCirculo">Escribe cuanto  mide el radio de tu circulo</label>
+                <input type="number" name="lados" id="inputCirculo">
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perimetro / Circunferencia</button>
+                <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
+            </form>
+        </section>
+    </div>
+    <h1 class="title">Porcentajes y descuentos</h1>
+    <div class="container">
+        <section class="item">
+            <h2 class="info">Calcula el precio a pagar de tus productos con descuento</h2>
+            <form action="">
+                <label for="inputPrice">Escribe el precio de tu producto</label>
+                <input type="number" id="inputPrice">
+                <label for="inputDiscount">Escribe el descuento de tu producto</label>
+                <input type="number" id="inputDiscount">
+                <label for="inputCoupon">¿Tienes cupon de descuento? Ingresa tu cupon y obten mas descuento</label>
+                <input type="text" id="inputCoupon" >
+                <button type="button" onclick="calcularDiscountPrice()">Calcular</button>
+                <p id="precioFinal"></p>
+                <p id="precioCoupon"></p>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

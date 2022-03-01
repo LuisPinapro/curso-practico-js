@@ -1,0 +1,48 @@
+:root{
+    --big: 24px;
+    --md: 16px;
+    --sm: 12px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+.subtitle{
+    text-align: center;
+    font-size: var(--md);
+}
+.title{
+    font-size: var(--big);
+    font-weight: bold;
+    text-align: center;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+.item{
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+}
+label.info{
+    font-size: var(--md);
+    text-align: right;
+}
+input{
+    width: 100%;
+}
+button{
+    margin-top: 6px;
+    width: 49%;
+}
+h2.info{
+    font-size: var(--md);
+}
