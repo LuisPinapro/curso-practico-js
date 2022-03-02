@@ -12,3 +12,9 @@ Curso de Platzi JS
 - Segundo pasi : Implemenar las formulas en js
 - Tercer paso: crear funciones
 - cuarto paso: integrar js con html 
+
+## Taller #3: Promedios, Mediana y moda
+- Primer paso: Definir las formulas
+- Segundo paso: Implementar las formulas en js
+- Tercer paso: Crear funciones
+- Cuarto paso: Integrar Js a html

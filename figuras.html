@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="./figuras.js"></script>
     <script src="./descuentos.js"></script>
+    <script src="./promedios.js"></script>
     <title>Matematicas aplicadas || Curso Practico JS</title>
 </head>
 <body>
@@ -66,8 +67,25 @@
                 <input type="text" id="inputCoupon" >
                 <button type="button" onclick="calcularDiscountPrice()">Calcular</button>
                 <p id="precioFinal"></p>
-                <p id="precioCoupon"></p>
             </form>
+        </section>
+    </div>
+    <h1 class="title">Promedios y modas</h1>
+    <div class="container">
+        <section class="item">
+            <h2 class="info">Calcula el promedio, la moda y la mediana</h2>
+            <form action="">
+                <label>Lista Ordenada</label>
+                <p id="mostrarlista" onload="mostrarLista()"></p>
+                <button type="button" onclick="mostrarLista()">Mostrar tu lista</button>
+                <button type="button" onclick="average()">Calcular Promedio</button>
+                <button type="button" onclick="medium()">Calcular Mediana</button>
+                <button type="button" onclick="calculatemode()">Calcular Moda</button>
+
+                <p id="respFinal"></p>
+
+            </form>
+
         </section>
     </div>
 </body>
