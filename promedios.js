@@ -84,6 +84,19 @@ const lista3Array = Object.entries(lista1Count).sort(
 );
 const mode = lista3Array[lista3Array.length - 1]
 console.groupEnd()
+//Media Armonica
+console.group("Media armonica");
+const vel = [120, 20, 100, 130];
+
+function mediaArmonica(vel1){
+    var sumVel = 0;
+    for (const iterator of vel1) {
+        sumVel += 1/iterator 
+    }
+    return vel1.length/sumVel;
+}
+console.groupEnd();
+console.group("Funciones html")
 //funciones y html
 
 lista2.forEach(element => {
@@ -115,3 +128,8 @@ function calculatemode(){
     const resp = document.getElementById("respFinal")
     resp.innerText = `La moda de la lista es: ${mode1} con ${mode2} repeticiones`; 
 }
+function calculateMediaArmonica(){
+    const resp = document.getElementById("respArmonica")
+    resp.innerText = `La media Armonica es: ${mediaArmonica(vel)} km/h`
+}
+console.groupEnd();
