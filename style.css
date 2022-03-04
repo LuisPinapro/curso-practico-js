@@ -1,11 +1,16 @@
 :root{
-    --big: 24px;
-    --md: 16px;
-    --sm: 12px;
+    --big: 26px;
+    --md: 20px;
+    --sm: 14px;
+    --platzicolor : rgb(14, 2, 48);
+    --platzicolor2 : rgb(0, 229, 191);
+    --gren-platzi : rgb(165, 235, 112);
+
 }
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     
@@ -14,36 +19,94 @@ body{
     text-align: center;
     font-size: var(--md);
 }
+header .title{
+    display: inline-block;
+    background: none;
+    margin-top: 0;
+    
+}
+header span {
+    color: white;
+    background-color: var(--platzicolor);
+}
+header div{
+    padding-top: 25px;
+    text-align: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./sources/Desde-casa-llego-lejos-Banner-05-447562e0-6caa-4fe5-8c0c-1924e6ef491f.jpeg");
+    background-color: var(--platzicolor);
+    background-repeat: no-repeat;
+    height: 180px;
+    background-size: cover;
+    
+}
 .title{
     font-size: var(--big);
     font-weight: bold;
     text-align: center;
+    background-color: var(--platzicolor2);
+    margin: 0;
 
 }
 .container{
+    padding-bottom: 25px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;   
+    background-color: var(--platzicolor2);
+}
+.container.geometric{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./sources/geometric-background.webp);
+}
+.container.porcent{
+    background-image: url(./sources/porcent-background.webp);
+    background-size: cover;
+}
+.container.average{
+    background-image: url(./sources/average-background.svg);
+    background-size: contain;
+    background-color: white;
+}
+.container.challenge{
+    background-image: url(./sources/challenge-background.jpeg);
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .item{
     border-radius: 20px;
     border: 1px solid black;
+    margin-top: 25px;
     width: 50%;
     text-align: center;
     padding: 15px;
+    background: rgba(165, 235, 112, 0.5)
 }
 label.info{
-    font-size: var(--md);
+    font-size: var(--sm);
     text-align: right;
 }
 input{
     width: 100%;
+    background: rgba(165, 235, 112, 0.8);
+
 }
 button{
     margin-top: 6px;
     width: 49%;
+    background: yellowgreen;
+}
+p.info{
+    font-size: var(--sm);
 }
 h2.info{
     font-size: var(--md);

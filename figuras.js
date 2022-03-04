@@ -85,13 +85,15 @@ function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado2(value);
-    alert(perimetro);
+    const resp = document.getElementById("respSquare");
+    resp.innerText = perimetro;
 }
 function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const area = AreaCuadrado2(value);
-    alert(area);
+    const resp = document.getElementById("respSquare");
+    resp.innerText = area;
 }
 function calcularPerimetroTriangulo(){
     const input1 = document.getElementById("InputTriangulo1");
@@ -101,7 +103,8 @@ function calcularPerimetroTriangulo(){
     const input3 = document.getElementById("InputTriangulo3");
     const value3 = input3.value;
     const perimetro = perimetroTriangulo2(value1, value2, value3);
-    alert(perimetro);
+    const resp = document.getElementById("respTri");
+    resp.innerText = perimetro;
 }
 function calcularAreaTriangulo(){
     const input1 = document.getElementById("InputTriangulo3");
@@ -109,20 +112,22 @@ function calcularAreaTriangulo(){
     const input2 = document.getElementById("InputAltura");
     const value2 = input2.value;
     const area = areaTriangulo2(value1, value2);
-    alert(area);
+    const resp = document.getElementById("respTri");
+    resp.innerText = area;
 }
 function calcularPerimetroCirculo(){
     const input1 = document.getElementById("inputCirculo");
     const value = input1.value;
     const perimetro = perimetroCirculo2(value);
-    alert(perimetro);
-
+    const resp = document.getElementById("respCir");
+    resp.innerText = perimetro;
 }
 function calcularAreaCirculo(){
     const input1 = document.getElementById("inputCirculo");
     const value = input1.value;
     const area = areaCirculo2(value);
-    alert(area);
+    const resp = document.getElementById("respCir");
+    resp.innerText = area;
 
 }
 function calcularAlturaIsoceles(){
@@ -133,5 +138,6 @@ function calcularAlturaIsoceles(){
     const input2 = document.getElementById("inputbase");
     const value2 = input2.value;
     const altura = alturaTrianguloIsoceles(value, value1, value2);
-    alert(altura);
+    const resp = document.getElementById("respTriIso");
+    resp.innerText = altura;
 }

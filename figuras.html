@@ -12,13 +12,15 @@
 </head>
 <body>
     <header>
-        <h1 class="title">
-            Curso Practico JS
+        <h1 class="title"><span>Curso Practico JS
+        </span>
         </h1>
-        <p class="subtitle">Este es el primer taller del curso practico de JS</p>
+        <div>
+            <span class="subtitle">Este es el primer taller del curso practico de JS</span>
+        </div>
     </header>
     <h1 class="title"> Figuras Geometricas</h1>
-    <div class="container">
+    <div class="container geometric">
         <section class="item">
             <h2 class="info">Calcula el area y perimetro de un cuadrado</h2>
             <form action="">
@@ -26,6 +28,7 @@
                 <input type="number" name="lados" id="InputCuadrado" >
                 <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
                 <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+                <p class= "info" id="respSquare"></p>
 
             </form>
         </section>
@@ -42,8 +45,23 @@
                 <input type="number" name="lados" id="InputAltura">
                 <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
                 <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+                <p class="info" id = "respTri"></p>
             </form>
         </section>
+        <section class="item">
+            <h2 class="info">Calcula el area y perimetro de un triangulo Isoceles</h2>
+            <form action="" >
+                <p class="info">Recuerda que dos lados son solo iguales</p>
+                <label class="info" for="inputlado1">Escribe el primer lado del triangulo </label>
+                <input type="number" name="lados" id="inputlado1">
+                <label class="info" for="inputlado2">Escribe el segundo lado del triangulo </label>
+                <input type="number" name="lados" id="inputlado2">
+                <label class="info" for="inputbase">Escribe la base del triangulo </label>
+                <input type="number" name="lados" id="inputbase">
+                <button type="button" onclick="calcularAlturaIsoceles()">Calcular Perimetro</button>
+                <p class="info" id = "respTriIso"></p>
+            </form>
+        </section> 
         <section class="item">
             <h2 class="info">Calcula el area y perimetro / circunferecia de un circulo</h2>
             <form action="">
@@ -51,19 +69,21 @@
                 <input type="number" name="lados" id="inputCirculo">
                 <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perimetro / Circunferencia</button>
                 <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
+                <p class="info" id = "respCir"></p>
             </form>
         </section>
+        
     </div>
     <h1 class="title">Porcentajes y descuentos</h1>
-    <div class="container">
+    <div class="container porcent">
         <section class="item">
             <h2 class="info">Calcula el precio a pagar de tus productos con descuento</h2>
             <form action="">
-                <label for="inputPrice">Escribe el precio de tu producto</label>
+                <label class="info" for="inputPrice">Escribe el precio de tu producto</label>
                 <input type="number" id="inputPrice">
-                <label for="inputDiscount">Escribe el descuento de tu producto</label>
+                <label class="info" for="inputDiscount">Escribe el descuento de tu producto</label>
                 <input type="number" id="inputDiscount">
-                <label for="inputCoupon">¿Tienes cupon de descuento? Ingresa tu cupon y obten mas descuento</label>
+                <label class= "info" for="inputCoupon">¿Tienes cupon de descuento? Ingresa tu cupon y obten mas descuento</label>
                 <input type="text" id="inputCoupon" >
                 <button type="button" onclick="calcularDiscountPrice()">Calcular</button>
                 <p id="precioFinal"></p>
@@ -71,11 +91,11 @@
         </section>
     </div>
     <h1 class="title">Promedios y modas</h1>
-    <div class="container">
+    <div class="container average">
         <section class="item">
             <h2 class="info">Calcula el promedio, la moda y la mediana</h2>
             <form action="">
-                <label>Lista Ordenada</label>
+                <label class="info">Lista Ordenada</label>
                 <p id="mostrarlista" onload="mostrarLista()"></p>
                 <button type="button" onclick="mostrarLista()">Mostrar tu lista</button>
                 <button type="button" onclick="average()">Calcular Promedio</button>
@@ -89,7 +109,7 @@
         </section>
     </div>
     <h1 class="title">Reto media armonica</h1>
-    <div class="container">
+    <div class="container challenge">
         <section class="item">
             <h2 class="info">Calcula la media armonica de un ejercicio</h2>
             <form action="">
