@@ -1,6 +1,6 @@
 console.group("Promedio")
 const lista1 = [
-    100, 200, 300, 400, 500
+    100, 200, 300, 400, 500, 600, 600, 600
 ];
 
 let sumaLista1 = 0;
@@ -35,7 +35,9 @@ function compare(a, b){
     return a - b;
 }
 lista2.sort(compare);
-const mitadLista1 = parseInt(lista2.length / 2);
+const mitadLista1 = function (list){
+    return parseInt(list.length / 2);
+}
 
 function isPar(num){
     if(num % 2 === 0){
@@ -46,17 +48,17 @@ function isPar(num){
     }
 }
 
-function mediana(){
+function mediana(list){
     let mediana;
-    if(isPar(lista2.length)){
-        const element1 = lista2[mitadLista1 - 1];
-        const element2 = lista2[mitadLista1];
+    if(isPar(list.length)){
+        const element1 = list[mitadLista1(list) - 1];
+        const element2 = list[mitadLista1(list)];
         const average = calcularMediaAritmetica([element1, element2]);
         mediana = average;
         return mediana;
     }   
     else{
-        mediana = lista2[mitadLista1]
+        mediana = list[mitadLista1(list)]
         return mediana
     }
 }
@@ -117,7 +119,7 @@ function average(){
     resp.innerText = `El promedio de la lista es: ${averg}`; 
 }
 function medium(){
-    const middle =  mediana();
+    const middle =  mediana(lista2);
     const resp = document.getElementById("respFinal")
     resp.innerText = `La mediana de la lista es: ${middle}`; 
 

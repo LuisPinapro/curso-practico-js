@@ -18,3 +18,10 @@ Curso de Platzi JS
 - Segundo paso: Implementar las formulas en js
 - Tercer paso: Crear funciones
 - Cuarto paso: Integrar Js a html
+
+## Parte Final
+- Primer paso: Saber que tipo de estudios se haran en datos.
+- Segundo paso: Definir las formulas
+- Tercer paso: Implementar las formulas en JS
+- Cuarto paso: Crear funciones
+- Quinto paso: Comunicar JS con HTML

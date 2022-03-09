@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="./figuras.js"></script>
-    <script src="./descuentos.js"></script>
-    <script src="./promedios.js"></script>
     <title>Matematicas aplicadas || Curso Practico JS</title>
 </head>
 <body>
@@ -49,7 +46,7 @@
             </form>
         </section>
         <section class="item">
-            <h2 class="info">Calcula el area y perimetro de un triangulo Isoceles</h2>
+            <h2 class="info">Calcula  de un triangulo Isoceles</h2>
             <form action="" >
                 <p class="info">Recuerda que dos lados son solo iguales</p>
                 <label class="info" for="inputlado1">Escribe el primer lado del triangulo </label>
@@ -125,5 +122,45 @@
 
         </section>
     </div>
+    <h1 class="title">Final del curso: Poner en practica todo lo aprendido</h1>
+    <div class="container final">
+        <section class="item">
+            <h2 class="info">Salarios de empleados en Colombia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Salario</th>
+                    </tr>
+                </thead>
+                <tbody id="viewTable">
+                </tbody>
+            </table>
+            <p id="infoSortList"></p>
+            <table>
+                <thead id= "tHead">
+                </thead>
+                <tbody id="viewSortList">
+                </tbody>
+            </table>
+            <p id="respView"></p>
+            <button type="button" onclick="viewSortedList()">Ver lista ordenada</button>  
+            <button type="button" onclick="viewAverage()">Ver Promedio de salarios</button>                
+            <button type="button" onclick="viewMedium()">Ver la mediana de los salarios</button>                
+            <button type="button" onclick="viewMode()">Ver moda de los salarios</button>     
+            <button type="button" onclick="viewAverageArmonic()">Ver promedio real de los salarios</button>     
+
+
+
+            
+         </section>
+    </div>
+    <script src="./figuras.js"></script>
+    <script src="./descuentos.js"></script>
+    <script src="./promedios.js"></script>
+    <script src="./salaries.js"></script>
+    <script src="./analitycs.js"></script>
+    <script src="./studiesSimulation.js"></script>
+
 </body>
 </html>
